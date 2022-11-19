@@ -86,26 +86,6 @@
 \newcommand*{\vcenteredhbox}[1]{\begingroup
 \setbox0=\hbox{#1}\parbox{\wd0}{\box0}\endgroup}
 
-% icon shortcut
-\newcommand{\icon}[3] { 							
-	\makebox(#2, #2){\textcolor{maincol}{\csname fa#1\endcsname}}
-}	
-
-% icon with text shortcut
-\newcommand{\icontext}[4]{ 						
-	\vcenteredhbox{\icon{#1}{#2}{#3}}  \hspace{2pt}  \parbox{0.9\mpwidth}{\textcolor{#4}{#3}}
-}
-
-% icon with website url
-\newcommand{\iconhref}[5]{ 						
-    \vcenteredhbox{\icon{#1}{#2}{#5}}  \hspace{2pt} \href{#4}{\textcolor{#5}{#3}}
-}
-
-% icon with email link
-\newcommand{\iconemail}[5]{ 						
-    \vcenteredhbox{\icon{#1}{#2}{#5}}  \hspace{2pt} \href{mailto:#4}{\textcolor{#5}{#3}}
-}
-
 %----------------------------------------------------------------------------------------
 %	PAGE LAYOUT  DEFINITIONS
 %----------------------------------------------------------------------------------------
@@ -228,7 +208,7 @@
 	\vspace{14pt}
 	\cvtext{
 		\textbf{\LARGE{\textcolor{darkcol}{\uppercase{#1}}}}\\[-4pt]
-		\textcolor{maincol}{ \rule{0.1\textwidth}{2pt} } \\
+		\textcolor{gray}{ \rule{0.1\textwidth}{0.5pt} } \\
 	}
 }
 
@@ -450,12 +430,12 @@ This numerical approach was highly optimised for cluster computing and implement
 		\large{ \textcolor{white} {Junior DevOps Consultant} }
 	\end {center}
 \end{minipage}} \\[14pt]
-\vspace{-12pt}
+%\vspace{-12pt}
 
 %---------------------------------------------------------------------------------------
 %	PROFILE
 %----------------------------------------------------------------------------------------
-\vfill\null
+%\vfill\null
 \cvsection{PROFILE}
 
 \cvtext{IT Consultant with strong theoretical skills and a passion for OpenSource sofware.\\
@@ -463,13 +443,12 @@ This numerical approach was highly optimised for cluster computing and implement
 DevOps Engineer, specialized both in automation and in custom application development, experienced with large projects and heterogeneous infrastructures. The link between development and operations, comfortable in both.\\
 
 Customer-oriented and structured method of working, focused on quality and maintainability. Highly motivated to work in a team, both comfortable in big companies as in small teams.\\
-
 }
 
 %---------------------------------------------------------------------------------------
 %	WORK EXPERIENCE
 %----------------------------------------------------------------------------------------
-\vfill\null
+%\vfill\null
 \cvsection{WORK EXPERIENCE}
 
 \cvevent

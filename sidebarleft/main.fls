@@ -998,6 +998,7 @@ INPUT myphoto.jpg
 INPUT C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecrm1728.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecrm2986.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecrm1200.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecrm1440.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\tcrm1000.tfm
 OUTPUT main.xdv
 INPUT main.aux

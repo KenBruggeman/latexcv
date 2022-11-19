@@ -325,18 +325,6 @@
 	\cvtext{#4}\\[14pt]
 }
 
-%---------------------------------------------------------------------------------------
-%	QR CODE
-%----------------------------------------------------------------------------------------
-
-% Renders a qrcode image (centered, relative to the parentwidth)
-% param 1: percent width, from 0 to 1
-\newcommand{\cvqrcode}[1] {
-	\begin{center}
-		\includegraphics[width={#1}\mpwidth]{qrcode}
-	\end{center}
-}
-
 
 %============================================================================%
 %
@@ -357,7 +345,7 @@
 %---------------------------------------------------------------------------------------
 %	META IMAGE
 %----------------------------------------------------------------------------------------
-\includegraphics[width=\linewidth]{untitled.jpg}	%trimming relative to image size
+\includegraphics[width=\linewidth]{myphoto.jpg}	%trimming relative to image size
 
 %---------------------------------------------------------------------------------------
 %	META SKILLS
@@ -390,7 +378,6 @@
 \iconemail{Envelope}{12}{contact@example.com}{contact@example.com}{black}\\[6pt]
 
 \vfill\null
-\cvqrcode{0.7}
 
 %---------------------------------------------------------------------------------------
 %	EDUCATION
@@ -415,7 +402,6 @@ This numerical approach was highly optimised for cluster computing and implement
 {The topic for the bachelor's thesis was 'Feshbach resonance'. A numerical application was built to calculate the diagrams.}
 
 \vfill\null
-\cvqrcode{0.7}
 
 %---------------------------------------------------------------------------------------
 %	CERTIFICATION
@@ -448,13 +434,9 @@ This numerical approach was highly optimised for cluster computing and implement
 {}
 {It is important for me to stay up to date with the newest topics in the field of IT. In DevOps it is also important to have a general overview and a hands-on experience on them. Therefore, besides intense article studies, I also keep myself up to date with online classes.}
 
-\vfill
-\cvqrcode{0.7}
 
 \newpage
-\mbox{} % hotfix to place qrcode on the bottom when there are not other elements
-\vfill
-\cvqrcode{0.7}
+
 
 \end{leftcolumn}
 \begin{rightcolumn}

@@ -205,7 +205,7 @@
 % Renders a a CV section headline with a nice underline in main color.
 % param 1: section title
 \newcommand{\cvsection}[1] {
-	\vspace{8pt}
+	\vspace{2pt}
 	\cvtext{
 		\textbf{\LARGE{\textcolor{darkcol}{\uppercase{#1}}}}\\[-4pt]
 		\textcolor{gray}{ \rule{0.1\textwidth}{0.5pt} } \\
@@ -325,8 +325,7 @@
 %---------------------------------------------------------------------------------------
 %	META IMAGE
 %----------------------------------------------------------------------------------------
-\includegraphics[width=\linewidth]{myphoto.jpg}	%trimming relative to image size
-
+\includegraphics[width=\linewidth]{myphoto.jpg}\\[12pt]	%trimming relative to image size
 %---------------------------------------------------------------------------------------
 %	META SKILLS
 %----------------------------------------------------------------------------------------
@@ -334,9 +333,8 @@
 
 \faIcon{map-marker-alt}\quad{Bezoekstraat 2, 9940 Evergem}\\[6pt]
 \faIcon{mobile-alt}\quad{(+32) 475 57 61 82}\\[6pt]
-\faIcon{envelope}\quad{kenbruggeman@hotmail.com}\\[6pt]
-\faIcon{linkedin}\quad{https://www.linkedin.com/\\
-in/ken-bruggeman-4126601b55/}\\[6pt]
+\faIcon{envelope}\quad{\href{mailto:kenbruggeman@hotmail.com}{kenbruggeman@hotmail.com}\\[6pt]
+\faIcon{linkedin}\quad{\href{https://www.linkedin.com/in/ken-bruggeman-4126601b5/}{ken-bruggeman-4126601b55}}\\[6pt]
 
 \cvsection{SKILLS}
 
@@ -354,9 +352,9 @@ in/ken-bruggeman-4126601b55/}\\[6pt]
 
 \cvskill{Terraform} {} {0.6} \\[-2pt]
 
-\cvskill{Ansible} {} {0.6} \\[-2pt]
+\cvskill{Ansible} {} {0.6} \\[6pt]
 
-\vfill
+
  
 \cvsection{TALEN}
 
@@ -366,8 +364,7 @@ in/ken-bruggeman-4126601b55/}\\[6pt]
 
 \cvskill{Frans} {} {0.5} \\[-2pt]
 
-\newpage
-
+\pagebreak
 %---------------------------------------------------------------------------------------
 %	CERTIFICATION
 %----------------------------------------------------------------------------------------
@@ -433,7 +430,7 @@ in/ken-bruggeman-4126601b55/}\\[6pt]
 {TSO Handel, Middelbare school Sint-Franciscus Evergem}
 {}
 {}
-
+\vspace{-2pt}
 %---------------------------------------------------------------------------------------
 %	PROFILE
 %----------------------------------------------------------------------------------------
@@ -449,12 +446,12 @@ in/ken-bruggeman-4126601b55/}\\[6pt]
 %---------------------------------------------------------------------------------------
 %	WORK EXPERIENCE
 %----------------------------------------------------------------------------------------
-\space
+
 \cvsection{WERKERVARING}
 
 \cvmetaevent
 	{Sep 2005 - Aug 2022}
-	{Junior DevOps Engineer, Gluo}
+	{Junior DevOps Engineer, Gluo \\[-2pt]}
 	{Infrastructure as Code (IaC), CI/CD, Linux.}
 	{Projecten:
         \cvlist{
@@ -466,27 +463,24 @@ in/ken-bruggeman-4126601b55/}\\[6pt]
 
 \cvmetaevent
     {Feb 2022 - Jun 2022}
-    {Stage Combell systeembeheer}
-    {Web- en applicatiehosting}
-    {Stageopdracht: Het dagelijks beheer en monitoren van Linux/Windows servers + klantondersteuning.\\
-    Technologieën en tools: Linux/Windows server, VMware VSphere, \\Nginx/Apache/IIS, Nagios, Thruk}
+    {Stage Combell systeembeheer \\[2pt]}
+    {}
+    {Stageopdracht: 
+        \cvlist{
+            \item Het dagelijks beheer en monitoren van Linux/Windows servers.
+            \item Ondersteuning bieden aan klanten bij vragen/problemen.
+        }
+    Technologieën en tools: Linux/Windows server, VMware VSphere, \\Nginx/Apache/IIS, Nagios, Thruk }
 
 \vfill
 
 \cvmetaevent
-{Feb 2005 - Aug 2022}
-{arbeider, Volvo Europa Trucks\\[0.1pt]}
-{}
-{Promotiefunctie multifunctionele arbeider (reserve) motorlijn: collega's/teamleider vervangen bij afwezigheid}
+    {Feb 2005 - Aug 2022}
+    {arbeider, Volvo Europa Trucks\\[0.1pt]}
+    {}
+    {Promotiefunctie multifunctionele arbeider (reserve) motorlijn: collega's/teamleider vervangen bij afwezigheid}
 
 % hotfixes to create fake-space to ensure the whole height is used
-\mbox{}
-\vfill
-\mbox{}
-\vfill
-\mbox{}
-\vfill
-\mbox{}
 \end{rightcolumn}
 \end{paracol}
 \end{document}

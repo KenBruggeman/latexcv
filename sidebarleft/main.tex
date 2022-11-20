@@ -205,7 +205,7 @@
 % Renders a a CV section headline with a nice underline in main color.
 % param 1: section title
 \newcommand{\cvsection}[1] {
-	\vspace{14pt}
+	\vspace{8pt}
 	\cvtext{
 		\textbf{\LARGE{\textcolor{darkcol}{\uppercase{#1}}}}\\[-4pt]
 		\textcolor{gray}{ \rule{0.1\textwidth}{0.5pt} } \\
@@ -279,7 +279,7 @@
 		\cvtext{\textbf{Achievements include:}}\\
 		{#7}
 	}
-	\vspace{14pt}
+	\vspace{6pt}
 }
 
 %----------------------------------------------------------------------------------------
@@ -292,7 +292,7 @@
 % param 3: customer, employer, etc,. (optional)
 % param 4: info text (optional)
 \newcommand{\cvmetaevent}[4] {
-	\textcolor{maincol} {\cvtext{\textbf{\Large{#1}}}\\[-2pt]}
+	\textcolor{maincol} {\cvtext{\textbf{\Large{#1}}}\\[-4pt]}
 
 	\ifthenelse{\isempty{#2}}{}{
 	\textcolor{darkcol} {\cvtext{\textbf{\large{#2}}}}
@@ -302,7 +302,7 @@
     \textcolor{darkcol} {\cvtext{\textbf{\large{#3}}}}\\[2pt]
 	}
 
-	\cvtext{#4}\\[2pt]
+	\cvtext{#4}\\[6pt]
 }
 
 
@@ -356,8 +356,8 @@ in/ken-bruggeman-4126601b55/}\\[6pt]
 
 \cvskill{Ansible} {} {0.6} \\[-2pt]
 
-\vfill\null
-
+\vfill
+ 
 \cvsection{TALEN}
 
 \cvskill{Nederlands} {} {1} \\[-2pt]
@@ -449,7 +449,7 @@ in/ken-bruggeman-4126601b55/}\\[6pt]
 %---------------------------------------------------------------------------------------
 %	WORK EXPERIENCE
 %----------------------------------------------------------------------------------------
-%\vfill\null
+\space
 \cvsection{WERKERVARING}
 
 \cvmetaevent
@@ -458,11 +458,26 @@ in/ken-bruggeman-4126601b55/}\\[6pt]
 	{Infrastructure as Code (IaC), CI/CD, Linux.}
 	{Projecten:
         \cvlist{
-		\item Website migratie project: AWS AMI maken via Packer, opzetten van AWS infrastructuur via Terraform, Bash scripting voor EC2 init script/backup cronjobs, configuratie Nginx en Varnish, automatiseren van proces via Gitlab CI/CD pipeline
-		\item Docker Compose project: Bestaande Docker Compose development omgeving updaten door applicatiestacks te scheiden en 1 gemeenschappelijke stack op te zetten waar applicatiestacks gebruik van maken.  
-		\item AWS Cloudwatch project: Met behulp van Terraform 2 dashboards opzetten die SQS queue size en AppRunner active instances opvolgen. Metric alarms configureren die via SNS een e-mail versturen wanneer thresholds overschreden worden.
-	}}
+		\item Migratie website van Azure AKS naar AWS EC2: AWS AMI maken via Packer, opzetten van AWS infrastructuur via Terraform, Bash scripting voor EC2 init script/backup cronjobs, configuratie Nginx en Varnish, automatiseren van proces via Gitlab CI/CD pipeline
+		\item Docker Compose: Bestaande Docker Compose development omgeving updaten door applicatiestacks te scheiden en 1 gemeenschappelijke stack op te zetten waar applicatiestacks gebruik van maken.  
+		\item AWS Cloudwatch: Met behulp van Terraform 2 dashboards opzetten die SQS queue size en AppRunner active instances opvolgen. Metric alarms configureren die via SNS een e-mail versturen wanneer thresholds overschreden worden.
+	}\\[-2pt]}
 
+
+\cvmetaevent
+    {Feb 2022 - Jun 2022}
+    {Stage Combell systeembeheer}
+    {Web- en applicatiehosting}
+    {Stageopdracht: Het dagelijks beheer en monitoren van Linux/Windows servers + klantondersteuning.\\
+    Technologieën en tools: Linux/Windows server, VMware VSphere, \\Nginx/Apache/IIS, Nagios, Thruk}
+
+\vfill
+
+\cvmetaevent
+{Feb 2005 - Aug 2022}
+{arbeider, Volvo Europa Trucks\\[0.1pt]}
+{}
+{Promotiefunctie multifunctionele arbeider (reserve) motorlijn: collega's/teamleider vervangen bij afwezigheid}
 
 % hotfixes to create fake-space to ensure the whole height is used
 \mbox{}
